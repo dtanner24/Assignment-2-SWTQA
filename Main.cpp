@@ -2,13 +2,12 @@
 
 using namespace std;
 
+
 int main()
 {
 	float feet;
 	float inches;
-	float totalheight;
 	float weight;
-	float BMI;
 	cout << "Please enter your height below:" << endl;
 	cout << "Feet: ";
 	cin >> feet;
@@ -17,14 +16,18 @@ int main()
 	cout << endl;
 	cout << "Please enter your weight in pounds: ";
 	cin >> weight;
+
+	float totalheight;
+	float BMI;
 	totalheight = (feet * 12) + inches;
 	float BMIweight;
 	float BMIheight;
+	float BMIheight2;
 	BMIweight = weight * 0.45;
 	BMIheight = totalheight * 0.025;
-	float BMIheight2;
 	BMIheight2 = BMIheight * BMIheight;
 	BMI = BMIweight / BMIheight2;
+	
 	cout << "BMI: " << BMI << endl;
 	if (BMI <= 18.5)
 	{
@@ -42,6 +45,6 @@ int main()
 	{
 		cout << "Obese" << endl;
 	}
-	
+		
 	return 0;
 }
