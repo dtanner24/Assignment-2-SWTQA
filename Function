@@ -1,0 +1,13 @@
+Function:
+Main (): 
+Gets input from the user (height, weight).
+Calculates totalheight by multiplying the feet by 12 and adding the inches.
+Calculates the BMIweight by multiplying weight by 0.45.
+Calculates the BMIheight by multiplying the totalheight by 0.025.
+Calculates the squared value of BMIheight and stores it in BMIheight2.
+Calculates the BMI value by dividing BMIweight by BMIheight2.
+Outputs BMI value to user.
+If BMI <= 18.5, returns “Underweight”
+If BMI > 18.5 and <= 24.9, returns “Normal Weight”
+If BMI > 24.9 and <= 29.9, returns “Overweight”
+If BMI > 29.9, returns “Obese”
