@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+	/*
 	float feet;
 	float inches;
 	float weight;
@@ -27,7 +28,10 @@ int main()
 	BMIheight = totalheight * 0.025;
 	BMIheight2 = BMIheight * BMIheight;
 	BMI = BMIweight / BMIheight2;
-	
+	*/
+	float BMI;
+	cout << "What is your BMI value: ";
+	cin >> BMI;
 	cout << "BMI: " << BMI << endl;
 	if (BMI <= 18.5)
 	{
