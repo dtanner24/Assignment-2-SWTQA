@@ -1,0 +1,39 @@
+Tests for Underweight:
+if (BMI <= 18.5)
+	{
+		cout << "Underweight" << endl;
+	}
+Point	  Expected	       Actual
+18.5	“Underweight”	  “Underweight”
+18.6	“Normal Weight”	“Normal Weight”
+18.4	“Underweight”	  “Underweight”
+
+Tests for Normal Weight:
+if (BMI > 18.5 && BMI <= 24.9)
+	{
+		cout << "Normal Weight" << endl;
+	}
+Point	  Expected	        Actual	    Point	   Expected	       Actual
+18.7	“Normal Weight”	“Normal Weight”	24.9	“Normal Weight”	“Normal Weight”
+18.6	“Normal Weight”	“Normal Weight”	24.8	“Normal Weight”	“Normal Weight”
+18.5	“Underweight”	  “Underweight”	   25	  “Overweight”	  “Overweight”
+
+Tests for Overweight:
+if (BMI > 24.9 && BMI <= 29.9)
+	{
+		cout << "Overweight" << endl;
+	}
+Point	 Expected	        Actual	     Point	  Expected	   Actual
+25	  “Overweight”	  “Overweight”	  29.9	 “Overweight”	 “Overweight”
+25.1	“Overweight”	  “Overweight”	  29.8	 “Overweight”	 “Overweight”
+24.9	“Normal Weight”	“Normal Weight”	 30	   “Obese”	     “Obese”
+
+Tests for Obese:
+if (BMI > 29.9)
+	{
+		cout << "Obese" << endl;
+	}
+Point	 Expected	      Actual
+30	   “Obese”	     “Obese”
+30.1	 “Obese”	     “Obese”
+29.9	 “Overweight”	 “Overweight”
